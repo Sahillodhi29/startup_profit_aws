@@ -1,0 +1,21 @@
+<html>
+<body>
+    <div class="login">
+       <h1>PROFIT FINDER</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+       <form action="{{ url_for('predict_profit')}}" method="post">
+         <input type="text" name="RnD_Spend" placeholder="RnD_Spend" required="required" /><br>
+           <input type="text" name="Administration" placeholder="Administration" required="required" /><br>
+           <input type="text" name="Marketing_Spend" placeholder="Marketing_Spend" required="required" /><br>
+          
+   
+   
+   
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </form>
+    <h2>
+       THE PROFIT PREDICTION IS {{result}}
+    </h2>
+   <body>
+</html>
